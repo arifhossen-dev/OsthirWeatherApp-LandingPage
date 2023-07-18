@@ -8,7 +8,7 @@ const toggleMenu = () => {
 }
 
 const data = {
-  logo: 'images/Osthir_weather_Logo.png',
+  logo: 'images/logo.png',
   heroData: {
     title: 'A better way to get Weather Information',
     description: 'Esse id magna consectetur fugiat non dolor in ad laboris magna laborum ea consequat. Nisi irure aliquip nisi adipisicing veniam voluptate id. In veniam incididunt ex veniam adipisicing sit.',
@@ -31,11 +31,11 @@ const menuItems = [
   <!-- Hero Section -->
   <div class="bg-white">
     <header class="absolute inset-x-0 top-0 z-50">
-      <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
+      <nav class="flex items-center justify-between p-6 mx-auto max-w-7xl sm:px-6 lg:px-8" aria-label="Global">
         <div class="flex lg:flex-1">
           <a href="#" class="-m-1.5 p-1.5">
             <span class="sr-only">Osthir Weather Info App</span>
-            <img class="w-auto h-8" :src="data.logo" alt="" />
+            <img class="w-auto h-14" :src="data.logo" alt="" />
           </a>
         </div>
         <div class="flex lg:hidden">
