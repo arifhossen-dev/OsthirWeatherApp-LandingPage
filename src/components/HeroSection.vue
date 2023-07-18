@@ -8,11 +8,11 @@ const toggleMenu = () => {
 }
 
 const data = {
-  logo: '/public/images/Osthir_weather_Logo.png',
+  logo: 'images/Osthir_weather_Logo.png',
   heroData: {
     title: 'A better way to get Weather Information',
     description: 'Esse id magna consectetur fugiat non dolor in ad laboris magna laborum ea consequat. Nisi irure aliquip nisi adipisicing veniam voluptate id. In veniam incididunt ex veniam adipisicing sit.',
-    image: '/public/images/OsthirWeatherApp.jpg'
+    image: 'images/OsthirWeatherApp.jpg'
   }
 }
 
