@@ -72,7 +72,7 @@ const pricingData = {
           The perfect plan if you&#039;re just getting started with our product.
         </p>
         <ul role="list" class="mt-8 space-y-3 text-sm leading-6 text-gray-600 sm:mt-10">
-          <template v-for="feature in pricingData.hobby.features">
+          <template v-for="(feature, index) in pricingData.hobby.features" :key="index">
 
             <li class="flex text-black gap-x-3">
               <svg class="flex-none w-5 h-6 text-red-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
@@ -102,7 +102,7 @@ const pricingData = {
           Dedicated support and infrastructure for your company.
         </p>
         <ul role="list" class="mt-8 space-y-3 text-sm leading-6 text-gray-300 sm:mt-10">
-          <template v-for="feature in pricingData.enterprise.features">
+          <template v-for="(feature, index) in pricingData.enterprise.features" :key="index">
             <li class="flex text-yellow-700 gap-x-3">
               <svg class="flex-none w-5 h-6 text-red-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                 <path fill-rule="evenodd"

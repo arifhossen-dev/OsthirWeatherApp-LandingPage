@@ -49,7 +49,7 @@ const menuItems = [
           </button>
         </div>
         <div class="hidden lg:flex lg:gap-x-12">
-          <template v-for="menu in menuItems">
+          <template v-for="(menu, index) in menuItems" :key="index">
             <a :href="menu.link" class="text-sm font-semibold leading-6 text-gray-900">
               {{ menu.title }}
             </a>
@@ -83,7 +83,7 @@ const menuItems = [
           <div class="flow-root mt-6">
             <div class="-my-6 divide-y divide-gray-500/10">
               <div class="py-6 space-y-2">
-                <template v-for="menu in menuItems">
+                <template v-for="(menu, index) in menuItems" :key="index">
                   <a :href="menu.link"
                     class="block px-3 py-2 -mx-3 text-base font-semibold leading-7 text-gray-900 rounded-lg hover:bg-gray-50">
                     {{ menu.title }}
